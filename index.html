@@ -3,99 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Алтай Абдурахим — Full-Stack / Python Engineer</title>
-    <meta name="description" content="Портфолио Алтая Абдурахима: Junior Full-Stack разработчик и Python-инженер. Django, PostgreSQL, REST API.">
+    <title>Алтай Абдурахим — Python-бэкенд, Telegram-боты и приложения с ИИ</title>
+    <meta name="description" content="Портфолио Алтая Абдурахима: техлид стартапа, Python-бэкенд на Django и FastAPI, Telegram-боты и приложения с ИИ. Участник ICPC NERC — Kyrgyzstan Regional 2026.">
+    <meta name="theme-color" content="#000000">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap&subset=cyrillic,latin" rel="stylesheet">
+    <!-- Inter — запасной шрифт там, где нет SF Pro (Windows, Android) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Приводочные метки по углам страницы — подпись всего документа -->
-    <span class="reg-mark reg-tl" aria-hidden="true"></span>
-    <span class="reg-mark reg-tr" aria-hidden="true"></span>
-
     <nav class="navbar">
-        <a href="#top" class="logo">ab.dussi<span class="logo-dot"></span></a>
+        <a href="#top" class="logo">ab.dussi</a>
         <ul class="nav-links">
-            <li><a href="#about">01 Обо мне</a></li>
-            <li><a href="#skills">02 Стек</a></li>
-            <li><a href="#projects">03 Проекты</a></li>
-            <li><a href="#log">04 Лог</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#stack">Стек</a></li>
+            <li><a href="#now">Сейчас</a></li>
+            <li><a href="#log">Опыт</a></li>
         </ul>
         <a href="#contact" class="nav-cta">Контакты</a>
     </nav>
 
-    <header id="top" class="hero">
-        <div class="hero-eyebrow">§ 00 — Портфолио / Обновлено <span id="rev-date"></span></div>
-
-        <h1 class="hero-name">
-            <span class="line" data-reveal>Алтай</span>
-            <span class="line" data-reveal>Абдурахим<span class="caret" aria-hidden="true"></span></span>
-        </h1>
-
-        <div class="hero-spec" id="about">
-            <div class="spec-row">
-                <span class="spec-key">Роль</span>
-                <span class="spec-val">Full-Stack Developer · Python Engineer</span>
-            </div>
-            <div class="spec-row">
-                <span class="spec-key">Профиль</span>
-                <span class="spec-val">Backend-архитектура, базы данных, S3, ИИ автоматизация</span>
-            </div>
-            <div class="spec-row">
-                <span class="spec-key">Учёба</span>
-                <span class="spec-val">Information Technology — International University of Central Asia</span>
-            </div>
-            <div class="spec-row">
-                <span class="spec-key">Статус</span>
-                <span class="spec-val status-open">
-                    <span class="status-dot" aria-hidden="true"></span>Открыт к работе
-                </span>
-            </div>
-        </div>
-
-        <p class="hero-lede">
-            Собираю веб-приложения целиком: от схемы базы данных и REST-логики
-            до интерфейса, который не стыдно показать. Довожу проекты от А до Я
-            , а не до папки «черновики».
-        </p>
-
-        <div class="hero-actions">
-            <a href="#projects" class="btn">Смотреть проекты <span aria-hidden="true">→</span></a>
-            <a href="#contact" class="btn btn-ghost">Связаться</a>
-        </div>
-    </header>
-
     <main>
-        <section id="skills" class="section">
-            <div class="section-head">
-                <span class="section-index">§ 02</span>
-                <h2>Технологический стек</h2>
+        <!-- Шапка как баннер в README профиля: фото справа, бегущая рамка, «Dynamic Island» -->
+        <header id="top" class="hero">
+            <div class="hero-card">
+                <img class="hero-photo" src="assets/hero.jpg" alt="" aria-hidden="true">
+                <span class="hero-shade" aria-hidden="true"></span>
+                <span class="hero-glow" aria-hidden="true"><span></span></span>
+                <span class="hero-ring" aria-hidden="true"></span>
+
+                <div class="island" aria-hidden="true">
+                    <span class="island-content">
+                        <svg class="island-spark" viewBox="0 0 24 24"><defs><linearGradient id="spark" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff9f0a"/><stop offset="0.35" stop-color="#ff375f"/><stop offset="0.7" stop-color="#bf5af2"/><stop offset="1" stop-color="#0a84ff"/></linearGradient></defs><path d="M12 1.5l2.6 7.9 7.9 2.6-7.9 2.6L12 22.5l-2.6-7.9L1.5 12l7.9-2.6z" fill="url(#spark)"/></svg>
+                        <span class="island-text">Сейчас тренируюсь</span>
+                        <span class="island-tag">ICPC · C++</span>
+                    </span>
+                </div>
+
+                <div class="hero-text">
+                    <p class="hero-eyebrow">C++ · Python · Django · FastAPI</p>
+                    <h1 class="hero-name"><span>Алтай</span> <span>Абдурахим</span></h1>
+                    <p class="hero-sub">Техлид стартапа из двух человек.</p>
+                    <a href="#projects" class="link-more">Мои проекты ›</a>
+                </div>
             </div>
 
-            <div class="datasheet">
-                <div class="ds-row" data-reveal>
-                    <span class="ds-cat">Backend</span>
-                    <span class="ds-items">Python · Django · PostgreSQL · REST API</span>
-                </div>
-                <div class="ds-row" data-reveal>
-                    <span class="ds-cat">Frontend</span>
-                    <span class="ds-items">JavaScript · HTML · CSS · Flet</span>
-                </div>
-                <div class="ds-row" data-reveal>
-                    <span class="ds-cat">Инфра / ОС</span>
-                    <span class="ds-items">S3 · Git</span>
-                </div>
-            </div>
-        </section>
+            <p class="hero-intro" data-reveal>
+                Студент второго курса IT в Международном университете Центральной Азии. А ещё техлид стартапа из двух человек.
+                Делаю Python-бэкенд на Django и FastAPI, Telegram-ботов и приложения с ИИ. Сейчас главное для меня — олимпиадное программирование на C++.
+            </p>
+            <p class="hero-langs" data-reveal>🇰🇿 казахский · 🇰🇬 кыргызский · 🇷🇺 русский · 🇬🇧 английский</p>
+
+            <ul class="facts tile" data-reveal>
+                <li><span class="fact-key">Учёба</span><span class="fact-val">Information Technology — International University of Central Asia</span></li>
+                <li><span class="fact-key">Олимпиады</span><span class="fact-val">Участник ICPC NERC — Kyrgyzstan Regional 2026</span></li>
+                <li><span class="fact-key">Статус</span><span class="fact-val status-open"><span class="status-dot" aria-hidden="true"></span>Открыт к работе</span></li>
+            </ul>
+        </header>
 
         <section id="projects" class="section">
-            <div class="section-head">
-                <span class="section-index">§ 03</span>
-                <h2>Проекты</h2>
+            <div class="section-head" data-reveal>
+                <h2 class="section-title">Главные проекты</h2>
+                <p class="section-sub">Сделал сам — и этим пользуются люди.</p>
             </div>
 
             <!-- Слева список проектов, справа панель со скриншотом активного проекта.
@@ -104,23 +74,23 @@
                 <ul class="fp-list">
 
                     <li data-reveal>
-                        <div class="fp-item is-active" data-fp-item>
+                        <div class="fp-item tile is-active" data-fp-item>
                             <button type="button" class="fp-head" aria-expanded="true" aria-controls="fp-body-1">
-                                <span class="fp-num">1</span>
-                                <span class="fp-title">RentUi</span>
+                                <img class="app-icon" src="assets/icons/rentui.svg" alt="">
+                                <span class="fp-head-text">
+                                    <span class="fp-title">RentUi</span>
+                                    <span class="fp-stack">Django · JavaScript</span>
+                                </span>
+                                <span class="chevron" aria-hidden="true"></span>
                             </button>
                             <div class="fp-body" id="fp-body-1">
                                 <div class="fp-body-inner">
-                                    <div class="fp-meta">
-                                        <a href="https://www.rentui.it.com/" class="fp-url">rentui.it.com</a>
-                                        <span class="tag">Django</span>
-                                        <span class="tag">JavaScript</span>
-                                    </div>
                                     <p class="fp-desc">
                                         Платформа поиска и аренды недвижимости. Настроил интеграцию
                                         сервисов и деплой (развертывание)
                                         на боевой сервер — проект работает в проде.
                                     </p>
+                                    <a href="https://www.rentui.it.com/" class="link-more fp-url" target="_blank" rel="noopener">rentui.it.com ›</a>
                                     <div class="fp-card fp-card-inline">
                                         <img src="assets/shots/rentui.webp" alt="Экраны RentUi: о сервисе, главная, регистрация" loading="lazy">
                                     </div>
@@ -130,23 +100,23 @@
                     </li>
 
                     <li data-reveal style="transition-delay: 70ms">
-                        <div class="fp-item" data-fp-item>
+                        <div class="fp-item tile" data-fp-item>
                             <button type="button" class="fp-head" aria-expanded="false" aria-controls="fp-body-2">
-                                <span class="fp-num">2</span>
-                                <span class="fp-title">Svet Sunny</span>
+                                <img class="app-icon" src="assets/icons/svet-sunny.svg" alt="">
+                                <span class="fp-head-text">
+                                    <span class="fp-title">Svet Sunny</span>
+                                    <span class="fp-stack">Full-Stack · DigitalOcean S3</span>
+                                </span>
+                                <span class="chevron" aria-hidden="true"></span>
                             </button>
                             <div class="fp-body" id="fp-body-2">
                                 <div class="fp-body-inner">
-                                    <div class="fp-meta">
-                                        <a href="https://www.nur-as-sunnah.com/" class="fp-url">nur-as-sunnah.com</a>
-                                        <span class="tag">Full-Stack</span>
-                                        <span class="tag">S3</span>
-                                    </div>
                                     <p class="fp-desc">
                                         Веб-ресурс с настроенными правами доступа и подключённым
                                         объектным хранилищем DigitalOcean S3 для управления
                                         медиафайлами.
                                     </p>
+                                    <a href="https://www.nur-as-sunnah.com/" class="link-more fp-url" target="_blank" rel="noopener">nur-as-sunnah.com ›</a>
                                     <div class="fp-card fp-card-inline">
                                         <img src="assets/shots/svet-sunny.webp" alt="Главная страница nur-as-sunnah.com" loading="lazy">
                                     </div>
@@ -156,22 +126,22 @@
                     </li>
 
                     <li data-reveal style="transition-delay: 140ms">
-                        <div class="fp-item" data-fp-item>
+                        <div class="fp-item tile" data-fp-item>
                             <button type="button" class="fp-head" aria-expanded="false" aria-controls="fp-body-3">
-                                <span class="fp-num">3</span>
-                                <span class="fp-title">Ansar HomeWear</span>
+                                <img class="app-icon" src="assets/icons/gb-ansar.svg" alt="">
+                                <span class="fp-head-text">
+                                    <span class="fp-title">Ansar HomeWear</span>
+                                    <span class="fp-stack">FastAPI · TypeScript</span>
+                                </span>
+                                <span class="chevron" aria-hidden="true"></span>
                             </button>
                             <div class="fp-body" id="fp-body-3">
                                 <div class="fp-body-inner">
-                                    <div class="fp-meta">
-                                        <a href="https://gb-ansar.vercel.app/" class="fp-url">gb-ansar</a>
-                                        <span class="tag">FastApi</span>
-                                        <span class="tag">TypeScript</span>
-                                    </div>
                                     <p class="fp-desc">
                                         Сервис по автоматизаций работы склада
                                         кассиров на базе ИИ
                                     </p>
+                                    <a href="https://gb-ansar.vercel.app/" class="link-more fp-url" target="_blank" rel="noopener">gb-ansar ›</a>
                                     <div class="fp-card fp-card-inline">
                                         <img src="assets/shots/gb-ansar.webp" alt="Экраны Ansar HomeWear: главная, каталог, карточка товара, заявка" loading="lazy">
                                     </div>
@@ -192,38 +162,107 @@
             </div>
         </section>
 
-        <section id="log" class="section">
-            <div class="section-head">
-                <span class="section-index">§ 04</span>
-                <h2>Активность и достижения</h2>
+        <section id="stack" class="section">
+            <div class="section-head" data-reveal>
+                <h2 class="section-title">Стек</h2>
+                <p class="section-sub">Языки, фреймворки и инструменты, с которыми я работаю.</p>
             </div>
 
-            <ol class="log">
+            <div class="stack-card" data-reveal>
+                <div class="stack-main">
+                    <p class="stack-label">Основной стек</p>
+                    <ul class="stack-main-grid">
+                        <li><img class="app-icon" src="assets/icons/cplusplus.svg" alt=""><b>C++</b><span>Олимпиады</span></li>
+                        <li><img class="app-icon" src="assets/icons/python.svg" alt=""><b>Python</b><span>Основной язык</span></li>
+                        <li><img class="app-icon" src="assets/icons/django.svg" alt=""><b>Django</b><span>Веб-бэкенд</span></li>
+                        <li><img class="app-icon" src="assets/icons/fastapi.svg" alt=""><b>FastAPI</b><span>API</span></li>
+                    </ul>
+                </div>
+                <ul class="stack-grid">
+                    <li><img class="app-icon" src="assets/icons/telegram.svg" alt="">aiogram</li>
+                    <li><img class="app-icon" src="assets/icons/postgresql.svg" alt="">PostgreSQL</li>
+                    <li><img class="app-icon" src="assets/icons/mongodb.svg" alt="">MongoDB</li>
+                    <li><img class="app-icon" src="assets/icons/sqlite.svg" alt="">SQLite</li>
+                    <li><img class="app-icon" src="assets/icons/pydantic.svg" alt="">Pydantic</li>
+                    <li><img class="app-icon" src="assets/icons/googlegemini.svg" alt="">Gemini</li>
+                    <li><img class="app-icon" src="assets/icons/openai.svg" alt="">OpenAI API</li>
+                    <li><img class="app-icon" src="assets/icons/openrouter.svg" alt="">OpenRouter</li>
+                    <li><img class="app-icon" src="assets/icons/javascript.svg" alt="">JavaScript</li>
+                    <li><img class="app-icon" src="assets/icons/typescript.svg" alt="">TypeScript</li>
+                    <li><img class="app-icon" src="assets/icons/html5.svg" alt="">HTML</li>
+                    <li><img class="app-icon" src="assets/icons/css.svg" alt="">CSS</li>
+                    <li><img class="app-icon" src="assets/icons/react.svg" alt="">React Native</li>
+                    <li><img class="app-icon" src="assets/icons/expo.svg" alt="">Expo</li>
+                    <li><img class="app-icon" src="assets/icons/git.svg" alt="">Git</li>
+                    <li><img class="app-icon" src="assets/icons/github.svg" alt="">GitHub</li>
+                    <li><img class="app-icon" src="assets/icons/vercel.svg" alt="">Vercel</li>
+                    <li><img class="app-icon" src="assets/icons/digitalocean.svg" alt="">DigitalOcean</li>
+                    <li><img class="app-icon" src="assets/icons/gunicorn.svg" alt="">Gunicorn</li>
+                    <li><img class="app-icon" src="assets/icons/githubactions.svg" alt="">Actions</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="now" class="section">
+            <div class="section-head" data-reveal>
+                <h2 class="section-title">Сейчас</h2>
+                <p class="section-sub">Главное сейчас — олимпиады.</p>
+            </div>
+
+            <a href="https://github.com/Doosi41/olymp" class="focus-card tile" target="_blank" rel="noopener" data-reveal>
+                <img class="app-icon" src="assets/icons/cplusplus.svg" alt="">
+                <span class="focus-text">
+                    <strong>Олимпиадное программирование на C++</strong>
+                    <span>Готовлюсь к ICPC: решения контестов с автотестами и разборами.</span>
+                    <span class="link-more">Решения — в olymp ›</span>
+                </span>
+            </a>
+        </section>
+
+        <section id="log" class="section">
+            <div class="section-head" data-reveal>
+                <h2 class="section-title">Активность и достижения</h2>
+                <p class="section-sub">Проекты, команды и контесты.</p>
+            </div>
+
+            <ol class="log tile">
                 <li class="log-item" data-reveal>
-                    <span class="log-mark">EVT</span>
+                    <img class="app-icon" src="assets/icons/rentui.svg" alt="">
                     <div class="log-body">
                         <strong>RentUi (6 месяцев разработки с полного нуля):</strong>
                         <span>
                             Прошел путь от старта команды из 12 человек до жесткого фильтра, где в сухом остатке осталось двое.
-                            Довел сложный full-stack проект по поиску и аренде недвижимости до 
+                            Довел сложный full-stack проект по поиску и аренде недвижимости до
                             полноценного продакшена и деплоя на боевой сервер.
                         </span>
                     </div>
                 </li>
                 <li class="log-item" data-reveal>
-                    <span class="log-mark">EVT</span>
+                    <img class="app-icon" src="assets/icons/gb-ansar.svg" alt="">
                     <div class="log-body">
                         <strong>GBansar / Grand Bazaar (1.5 месяца)</strong>
                         <span>
-                            С нуля спроектировал и запустил систему автоматизации склада для ритейла. 
-                            Залил базу данных на 80+ позиций с пагинацией, внедрил мобильное управление через 
-                            Telegram-бота для защиты админки и вывел проект на этап реальной обкатки и использования 
+                            С нуля спроектировал и запустил систему автоматизации склада для ритейла.
+                            Залил базу данных на 80+ позиций с пагинацией, внедрил мобильное управление через
+                            Telegram-бота для защиты админки и вывел проект на этап реальной обкатки и использования
                             кассирами на складе.
                         </span>
                     </div>
                 </li>
                 <li class="log-item" data-reveal>
-                    <span class="log-mark log-mark-open">NOW</span>
+                    <img class="app-icon" src="assets/icons/olymp.svg" alt="">
+                    <div class="log-body">
+                        <strong>ICPC NERC — Kyrgyzstan Regional (1 ноября 2026)</strong>
+                        <span>
+                            Участник регионального этапа в команде IUCA-6. Задачу A решили прямо на контесте,
+                            B дорешал после. До этого — квалификация 3 октября. Решения и разборы лежат
+                            в репозитории <a href="https://github.com/Doosi41/olymp" target="_blank" rel="noopener">olymp</a>:
+                            30+ задач на C++17 и Python (ICPC, acmp.ru).
+                        </span>
+                    </div>
+                </li>
+                <li class="log-item" data-reveal>
+                    <span class="app-icon app-icon-open" aria-hidden="true"><span class="status-dot"></span></span>
                     <div class="log-body">
                         <strong>Открыт к предложениям</strong>
                         <span>Рассматриваю позиции: Backend Django Developer, Project Manager.</span>
@@ -234,27 +273,30 @@
     </main>
 
     <footer id="contact" class="footer">
-        <span class="reg-mark reg-bl" aria-hidden="true"></span>
-        <span class="reg-mark reg-br" aria-hidden="true"></span>
-
-        <div class="footer-head">
-            <span class="section-index">§ 05</span>
-            <h2>Связаться</h2>
+        <div class="section-head" data-reveal>
+            <h2 class="section-title">Контакты</h2>
+            <p class="section-sub">Открыт для новых проектов и вакансий. Пишите — отвечаю быстро.</p>
         </div>
-        <p class="footer-lede">Открыт для новых проектов и вакансий. Пишите — отвечаю быстро.</p>
 
-       <ul class="contacts">
-            <li><a href="https://github.com/a1tvv" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-github" style="font-size:1.1rem"></i></span>GitHub</a></li>
-            <li><a href="https://t.me/dusi84" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-telegram" style="font-size:1.1rem"></i></span>Telegram</a></li>
-            <li><a href="https://www.instagram.com/ab.dussi" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-instagram" style="font-size:1.1rem"></i></span>Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@ab.dussi" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-tiktok" style="font-size:1.1rem"></i></span>TikTok</a></li>
-            <li><a href="https://wa.me/996554016042" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-whatsapp" style="font-size:1.1rem"></i></span>WhatsApp</a></li>
-            <li><a href="mailto:altaiabdurahim07@gmail.com" class="contact-link"><span class="contact-key"><i class="bi bi-envelope-fill" style="font-size:1.1rem"></i></span>Email</a></li>
+        <ul class="contacts">
+            <li><a href="https://t.me/dusi84" class="contact-link tile" target="_blank" rel="noopener"><img class="app-icon" src="assets/icons/telegram.svg" alt=""><span class="contact-text"><b>Telegram</b><span>@dusi84</span></span><span class="chevron" aria-hidden="true"></span></a></li>
+            <li class="contact-wide"><a href="mailto:altaiabdurahim07@gmail.com" class="contact-link tile"><img class="app-icon" src="assets/icons/email.svg" alt=""><span class="contact-text"><b>Email</b><span>altaiabdurahim07@gmail.com</span></span><span class="chevron" aria-hidden="true"></span></a></li>
+            <li><a href="https://github.com/Doosi41" class="contact-link tile" target="_blank" rel="noopener"><img class="app-icon" src="assets/icons/github.svg" alt=""><span class="contact-text"><b>GitHub</b><span>Doosi41</span></span><span class="chevron" aria-hidden="true"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/abdurakhim-altai-216066339" class="contact-link tile" target="_blank" rel="noopener"><img class="app-icon" src="assets/icons/linkedin.svg" alt=""><span class="contact-text"><b>LinkedIn</b><span>Abdurakhim Altai</span></span><span class="chevron" aria-hidden="true"></span></a></li>
+            <li><a href="https://wa.me/996554016042" class="contact-link tile" target="_blank" rel="noopener"><img class="app-icon" src="assets/icons/whatsapp.svg" alt=""><span class="contact-text"><b>WhatsApp</b><span>+996 554 016 042</span></span><span class="chevron" aria-hidden="true"></span></a></li>
+            <li><a href="https://www.instagram.com/ab.dussi" class="contact-link tile" target="_blank" rel="noopener"><img class="app-icon" src="assets/icons/instagram.svg" alt=""><span class="contact-text"><b>Instagram</b><span>@ab.dussi</span></span><span class="chevron" aria-hidden="true"></span></a></li>
+            <li><a href="https://www.tiktok.com/@ab.dussi" class="contact-link tile" target="_blank" rel="noopener"><img class="app-icon" src="assets/icons/tiktok.svg" alt=""><span class="contact-text"><b>TikTok</b><span>@ab.dussi</span></span><span class="chevron" aria-hidden="true"></span></a></li>
         </ul>
+
+        <div class="quote-card" data-reveal>
+            <p class="quote-line titanium">Stay hungry.</p>
+            <p class="quote-line ai-text">Stay foolish.</p>
+            <p class="quote-author">Steve Jobs · 1955–2011</p>
+        </div>
 
         <!-- Плавающая кнопка скачивания резюме -->
         <a href="resume.pdf" download="Altai_Abdurakhim_CV.pdf" class="resume-fab" aria-label="Скачать резюме в PDF">
-            <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span>Скачать резюме</span>
         </a>
 
